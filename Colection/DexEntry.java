@@ -1,17 +1,20 @@
-package Colection;
+package colection;
 
 import java.util.Scanner;
 
 public class DexEntry {
-
+    
     private String DexEntry = null;
 
-    public void AtualizarDexEntry() {
+    public void AtribuirDexEntry(){
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Digite a nova dex Entry do pokemon");
+        Scanner scan = new Scanner ( System.in );
         DexEntry = scan.nextLine();
 
     }
 
+    @Override
+    public String toString() {
+        return DexEntry;
+    }
 }
